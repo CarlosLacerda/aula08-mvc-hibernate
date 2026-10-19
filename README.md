@@ -125,15 +125,8 @@ Pontos de destaque:
 | `release version 21 not supported` | Use JDK 21 ou mude `maven.compiler.release` para `17` no `pom.xml`. |
 | Aviso `SLF4J: No SLF4J providers were found` | Normal; pode ser ignorado. |
 
-## Possíveis melhorias
-
-- Trocar o pool embutido por HikariCP.
-- Externalizar usuário e senha em variáveis de ambiente.
-- Adicionar testes automatizados dos DAOs com um banco em memória.
-- Criar uma camada de serviço entre controladoras e DAOs.
-
 ## Autor
 
-Seu Nome — [seu-usuario](https://github.com/seu-usuario)
+Seu Nome — [Carlos Lacerda](https://github.com/CarlosLacerda)
 
 Projeto desenvolvido para fins didáticos, a partir do exemplo da *Aula 08*.
