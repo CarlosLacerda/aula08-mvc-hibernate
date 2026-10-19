@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- ============= CONFIGURAÇÃO DE ACESSO AO BANCO DE DADOS ================= -->
+		<!-- Trocar o IPv4 do servidor e o RA (banco, usuário e senha) -->
+		<property name="jakarta.persistence.jdbc.driver">org.mariadb.jdbc.Driver</property>
+		<property name="jakarta.persistence.jdbc.url">jdbc:mariadb://localhost:3306/aula08?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=America/Sao_Paulo&amp;useSSL=false&amp;allowPublicKeyRetrieval=true</property>
+		<property name="jakarta.persistence.jdbc.user">root</property>
+		<property name="jakarta.persistence.jdbc.password">SUA_SENHA</property>
+		<property name="hibernate.connection.pool_size">5</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">none</property>
+
+		<mapping class="mvc.model.Categoria" />
+		<mapping class="mvc.model.Produto" />
+	</session-factory>
+</hibernate-configuration>
